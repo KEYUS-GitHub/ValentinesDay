@@ -103,7 +103,7 @@ function timeElapse(c) {
 	if (f < 10) {
 		f = "0" + f
 	}
-	var a = '<span class="digit">' + g + '</span> days <span class="digit">' + b + '</span> hours <span class="digit">' + d + '</span> minutes <span class="digit">' + f + "</span> seconds";
+	var a = '<span class="digit">' + g + '</span> 天 <span class="digit">' + b + '</span> 小时 <span class="digit">' + d + '</span> 分 <span class="digit">' + f + "</span> 秒";
 	$("#elapseClock").html(a)
 }
 

@@ -75,7 +75,7 @@ body {
 }
 
 #code .string {
-    color: #2a36ff
+    color: red
 }
 
 #code .keyword {
@@ -92,7 +92,7 @@ body {
 }
 
 #code .comments {
-    color: red;
+    color: rgb(6, 22, 245);
 }
 
 #copyright {
