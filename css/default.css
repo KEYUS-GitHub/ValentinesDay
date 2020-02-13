@@ -92,7 +92,13 @@ body {
 }
 
 #code .comments {
-    color: rgb(6, 22, 245);
+    color: red;
+    font-size: 16px;
+}
+
+#code .title {
+    color: red;
+    font-size: 16px;
 }
 
 #copyright {
@@ -105,7 +111,7 @@ body {
 #errorMsg {
     width: 100%;
     text-align: center;
-    font-size: 24px;
+    font-size: 100px;
     position: absolute;
     top: 100px;
     left: 0
