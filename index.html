@@ -27,56 +27,41 @@
 			i = Boy(<span class="string">"潘科宇"</span>)<br/>
 			u = Girl(<span class="string">"茂云洁"</span>)<br/>
 			<span class="comments"># 2019年10月9日，我们相遇在牛客网上。 </span><br/>
-			<span class="comments"># 我万万没有想到，一次偶然间的刷帖，成为了我们幸福的开端！ </span><br/>
-			i.meet(u, theWay=<span class="keyword">online</span>)<br/>
-			<span class="comments"># 11号的中午，我在西安市第一次遇见俏皮可爱的你，特别心动！ </span><br/>
+			<span class="comments"># 我万万没有想到，一次偶然间的刷帖，成为了我们幸福的开始！ </span><br/>
+			i.meet(u, the_way=<span class="keyword">Online</span>)<br/>
+			<span class="comments"># 在11号的中午，我在西安第一次见到了俏皮可爱的你，特别心动！ </span><br/>
 			i.fellInLoveWith(u)<br/>
 			<span class="comments"># 在饭后的街道上，我送你去医院，在红绿灯的边上，我拉住了前方的你~ </span><br/>
 			i.accompany(u)<br/>
 			<span class="comments"># 或行色匆匆，悲欢千万种~ 在去往北京的路上，我彻夜难眠... </span><br/>
 			i.miss(u)<br/>
-			<span class="comments"># 2019年11月2日，我们一起看了电影《天气之子》，在城墙的边上，我不禁表达了我的爱意！ </span><br/>
-			i.expressMyFellingsTo(u)<br/>
-			<span class="comments"># 或行色匆匆，悲欢千万种~ 在去往北京的路上，我彻夜难眠... </span><br/>
-			i.confess(u)<br/>
-			<span class="comments"># Nov 5, 2018, You became my girlfriend.</span><br/>
+			<span class="comments"># 同年11月2日，我们一起看了电影《天气之子》，我怀着内心的不安，第一次向你表白~ </span><br/>
+			i.expressMyFeelingsTo(u)<br/>
+			<span class="comments"># 我喜欢你！茂云洁！ </span><br/>
+			i.love(u)<br/>
+			<span class="comments"># 我知道，你会是我的女朋友！ </span><br/>
+			u.willAccept(i)<br/>
+			<span class="comments"># 同年12月12日，你对我说：你想和我一起去旅行~ </span><br/>
+			u.wantToTravelWith(i)<br/>
+			<span class="comments"># 我知道，你答应要当我的女朋友！ </span><br/>
 			u.accepted(i)<br/>
-			<span class="comments"># Since then, we spent harmony happiness life every day.</span><br/>
+			<span class="comments"># 和你在一起的时光真的很快乐！ </span><br/>
 			happy(u, i)<br/>
-			<span class="comments"># We enjoy studying together.</span><br/>
-			study(u, i)<br/>
-			<span class="comments"># We enjoy cuisine together.</span><br/>
-			dine(u, i)<br/>
-			<span class="comments"># We enjoy appointment together.</span><br/>
-			appoint(u, i)<br/>
-			<span class="comments"># We enjoy vacation together.</span><br/>
-			vacation(u, i)<br/>
-			<span class="comments"># Sometimes there are a few conflicts between us.</span><br/>
+			<span class="comments"># 虽然我们两个时而吵架~ </span><br/>
 			conflict(u, i, sometimes=<span class="keyword">True</span>)<br/>
-			<span class="comments"># But we are getting more and more in harmony together.</span><br/>
-			u.in_harmony_with(i) <br/>
-			i.in_harmony_with(u) <br/>
-			<span class="comments"># You are the greatest love of my life.</span><br/>
-			while <span class="keyword">True</span>:<br/>
-			<span class="placeholder"></span><span class="keyword">if</span> u.with(i):<br/>
-			<span class="placeholder"></span><span class="placeholder"></span>u = everything<br/>
-			<span class="placeholder"></span><span class="keyword">else</span>:<br/>
-			<span class="placeholder"></span><span class="placeholder"></span>everything = u<br/>
-			<span class="comments"># Waiting me marries you, we will be the happiest couple in the world.</span><br/>
-			i.marry(u, in_the_future=<span class="keyword">True</span>)<br/>
-			i.live_happily_forever_with(u)<br/>
-			<span class="comments"># I love you forever.</span><br/>
+			<span class="comments"># 但我们的感情会越来越好~ </span><br/>
+			getBetter(u, i) <br/>
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					Qian, I have fallen in love with you for
+					云云，我已经爱上了你
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
-					Love u forever and ever.<br/>
-					<div class="signature">- Qingcai Cui | Germey</div>
+					我将爱你到永远！<br/>
+					<div class="signature">- 潘科宇</div>
 				</div>
 			</div>
 		</div>
@@ -89,9 +74,9 @@
 	var offsetX = $("#loveHeart").width() / 2;
 	var offsetY = $("#loveHeart").height() / 2 - 55;
 	var together = new Date();
-	// 此处月份介于 0 ~ 11 之间。用本地时间表示，如 8 月要用 7 表示。
-	together.setFullYear(2019, 10, 11);
-	together.setHours(15);
+	// 此处月份介于 0 ~ 11 之间。用本地时间表示，如 10 月要用 9 表示。
+	together.setFullYear(2019, 9, 11);
+	together.setHours(12); // 我们是中午见的面，大概就这么算吧
 	together.setMinutes(0);
 	together.setSeconds(0);
 	together.setMilliseconds(0);
