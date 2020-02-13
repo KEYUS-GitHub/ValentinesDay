@@ -33,7 +33,7 @@ body {
 #words {
     font-family: "sans-serif";
     width: 500px;
-    font-size: 24px;
+    font-size: 30px;
     color: #666
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 #code .comments {
-    color: #3f7f5f
+    color: red;
 }
 
 #copyright {
