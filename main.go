@@ -15,6 +15,7 @@ func main() {
 	// 处理静态资源
 	r.Static("/css", "./css")
 	r.Static("/js", "./js")
+	r.Static("/file", "./file")
 	r.StaticFile("/digital.ttf", "./digital.ttf")
 	r.StaticFile("/favicon.ico", "./favicon.ico")
 	r.StaticFile("/", "./index.html")
